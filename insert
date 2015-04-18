@@ -1,0 +1,47 @@
+
+INSERT INTO `clinicas` (`id_clinica`, `nombre`, `razonsocial`, `cif`, `localidad`, `provincia`, `direccion`, `cp`, `numclinica`, `id_tarifa`) VALUES
+(1, 'CENTRO IMPLANTOLOGICO BARCELONA', 'XX', 'B11111111', 'BARCELONA', 'BARCELONA', 'Avda. Gracia nº 15', '8015', '1', 1),
+(2, 'CENTRO DE IMPLANTOLOGÍA MADRID', 'XX', 'B11111112', 'MADRID', 'MADRID', 'Paseo La Castellana nº 16', '28045', '2', 1),
+(3, 'CENTRO DE IMPLANTOLOGÍA VIGO', 'XX', 'B11111113', 'VIGO', 'PONTEVEDRA', 'Calle de Vigo nº 17', '36208', '3', 1),
+(4, 'CENTRO DE IMPLANTOLOGÍA ZARAGOZA', 'XX', 'B11111114', 'ZARAGOZA', 'ZARAGOZA', 'Paseo Independencia nº 18', '50005', '4', 1),
+(5, 'CENTRO DE IMPLANTOLOGÍA VALENCIA', 'XX', 'B11111115', 'VALENCIA', 'VALENCIA', 'Calle de Valencia nº 19', '46018', '5', 1),
+(6, 'CENTRO DE IMPLANTOLOGÍA SANTANDER', 'XX', 'B11111116', 'SANTANDER', 'SANTANDER', 'Calle de Santander nº 20', '50008', '6', 2),
+(15, 'CENTRO DE IMPLANTOLOGÍA TARRAGONA', 'XX', 'B11111117', 'MADRID', 'TARRAGONA', 'Paseo de Tarragona nº 21', '28020', '15', 1);
+
+
+
+INSERT INTO `doctores` (`id_doctor`, `nombre`, `numcolegiado`) VALUES
+(1, 'DAVID PEREZ', '11111'),
+(2, 'FRANCISCO JIMENEZ', '22222'),
+(3, 'ESTEBAN GONZALEZ', '333333'),
+(4, 'DAVINIA DE DOS SANTOS', '44444'),
+(5, 'JORGE ESPIAS', '55555'),
+(6, 'LORENZO CAMAÑÓN', '666666'),
+(7, 'HUGO IDIAZABAL', '777777'),
+(8, 'JACOBO MADORRÁN', '888888'),
+(9, 'MANUEL LOPEZ', '999999'),
+(10, 'ADRIANA MEAÑOS', '101010'),
+(11, 'LAURA SERRANO', '12121212'),
+(12, 'YASMINE JERARCAL', '13131313'),
+(13, 'DIEGO ZAERA', '14141414');
+
+
+
+
+INSERT INTO `clinica_doctor` (`id_doctor`, `id_clinica`, `numdoctor`) VALUES
+(1, 1, 1),
+(2, 1, 3),
+(3, 6, 2),
+(4, 1, 4),
+(4, 2, 1),
+(5, 2, 4),
+(6, 2, 2),
+(7, 4, 1),
+(8, 2, 3),
+(9, 3, 2),
+(10, 3, 1),
+(11, 1, 2),
+(11, 4, 2),
+(11, 6, 1),
+(12, 5, 1),
+(13, 6, 3);
